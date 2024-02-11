@@ -5,12 +5,12 @@ import Pictureonhero from './undercomponents/pictureonhero';
 function Grid () {
   return (
     <div className="grid">
-        <div className="row">
+        <div className="col slide-in-bottom">
             <Pictureonhero/>
-            <div className="col">2</div>
-            <div className="col">3</div>
-            <div className="col">4</div>
-            <div className="col">5</div>
+            <div className="row">2</div>
+            <div className="row">3</div>
+            <div className="row">4</div>
+            <div className="row">5</div>
         </div>
         <div className="row">
             <div className="col">6</div>
