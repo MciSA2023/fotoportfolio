@@ -1,9 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Mainscreen from './screens/mainscreen';
 
 function App() {
   return (
-    
+    <div>
+      <Mainscreen />
+    </div>
   );
 }
 
