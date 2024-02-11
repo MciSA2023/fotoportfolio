@@ -5,6 +5,7 @@ class Picture {
         this.category = Array.isArray(category) ? category : [category];
         this.location = location;
     }
+
 }
 
 export default Picture;

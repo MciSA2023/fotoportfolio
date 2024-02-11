@@ -1,11 +1,12 @@
 import './grid.css';
+import Pictureonhero from './undercomponents/pictureonhero';
 
 
 function Grid () {
   return (
     <div className="grid">
         <div className="row">
-            <div className="col">1</div>
+            <Pictureonhero/>
             <div className="col">2</div>
             <div className="col">3</div>
             <div className="col">4</div>
