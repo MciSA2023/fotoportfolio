@@ -1,6 +1,5 @@
 import './loading.css';
 import Camera from './undercomponents/camera';
-import camera from './undercomponents/camera';
 
 
 function Loading() {
