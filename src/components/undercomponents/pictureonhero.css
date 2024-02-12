@@ -1,4 +1,15 @@
+.Wrapper-PictureonHero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+
 .picture_setformat{
-    width: 100px;
-    height: 100px;
+    aspect-ratio: 1.7/1;
+    width: 100%;
 }
