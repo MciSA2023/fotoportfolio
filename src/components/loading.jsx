@@ -5,7 +5,7 @@ function Loading() {
     return( 
     <div className='loading_container'>
         <div className='loading'>
-            Sehej hai LODA...
+            Loading Screen incoming ...
         </div>
 
 
