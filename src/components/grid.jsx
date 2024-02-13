@@ -2,6 +2,8 @@ import './grid.css';
 import Pictureonhero from './undercomponents/pictureonhero';
 
 
+
+
 function Grid () {
   return (
   <div className='grid_container'> 
