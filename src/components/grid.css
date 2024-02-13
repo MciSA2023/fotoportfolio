@@ -109,14 +109,14 @@
       opacity: 0;
   }
   100% {
-      transform: translateY(-6px);
+      transform: translateY(-55px);
       opacity: 1;
   }
 }
 
 .scale-in-center {
-	-webkit-animation: scale-in-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s alternate both;
-	        animation: scale-in-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s alternate both;
+	-webkit-animation: scale-in-center 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s alternate both;
+	        animation: scale-in-center 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s alternate both;
 }
 
 @-webkit-keyframes scale-in-center {
