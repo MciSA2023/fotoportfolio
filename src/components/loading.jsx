@@ -1,11 +1,12 @@
 import './loading.css';
-import Camera from './undercomponents/camera';
 
 
 function Loading() {
     return( 
     <div className='loading_container'>
-        <Camera />
+        <div className='loading'>
+            Sehej hai LODA...
+        </div>
 
 
     </div>

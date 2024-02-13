@@ -109,7 +109,7 @@
       opacity: 0;
   }
   100% {
-      transform: translateY(-55px);
+      transform: translateY(-10px);
       opacity: 1;
   }
 }
@@ -126,8 +126,8 @@
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(5.4);
-            transform: scale(5.4);
+    -webkit-transform: scale(5.5);
+            transform: scale(5.5);
     opacity: 1;
   }
 }
@@ -138,8 +138,8 @@
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(5.4);
-            transform: scale(5.4);
+    -webkit-transform: scale(5.5);
+            transform: scale(5.5);
     opacity: 1;
   }
 }
