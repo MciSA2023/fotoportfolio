@@ -19,7 +19,7 @@ function Grid() {
 
    if (animationComplete) {
       return (
-         <Drawer />
+         <Drawer pictureId={0}/>
       );
    }
 
@@ -29,79 +29,79 @@ function Grid() {
     <div className={`grid_container ${showGrid ? '' : 'fade-out'}`} >
       <div className={`grid ${showGrid ? 'scale-in-center' : ''}`}>
         <div className='item slide-in-top'>
-          <Pictureonhero pictureId={1} />
+          <Pictureonhero pictureId={0} />
         </div>
         <div className='item slide-in-bottom'>
-         <Pictureonhero pictureId={2} />
+         <Pictureonhero pictureId={1} />
       </div>
       <div className='item slide-in-top_delayed'>
-      <Pictureonhero pictureId={1} />
+      <Pictureonhero pictureId={0} />
       </div>
       <div className='item slide-in-bottom-delayed'>
-         <Pictureonhero pictureId={2} />
+         <Pictureonhero pictureId={1} />
       </div> 
       <div className='item slide-in-top'>
-      <Pictureonhero pictureId={1} />
+      <Pictureonhero pictureId={0} />
       </div>
       <div className='item slide-in-top'>
-         <Pictureonhero pictureId={2} />
+         <Pictureonhero pictureId={1} />
       </div> 
       <div className='item slide-in-bottom'>
-      <Pictureonhero pictureId={1} />
+      <Pictureonhero pictureId={0} />
       </div>
       <div className='item slide-in-top_delayed'>
-         <Pictureonhero pictureId={2} />
+         <Pictureonhero pictureId={1} />
       </div> 
       <div className='item slide-in-bottom-delayed'>
-      <Pictureonhero pictureId={1} />
+      <Pictureonhero pictureId={0} />
       </div>
       <div className='item slide-in-top'>
-         <Pictureonhero pictureId={2} />
+         <Pictureonhero pictureId={1} />
       </div> 
       <div className='item slide-in-top'>
-      <Pictureonhero pictureId={1} />
+      <Pictureonhero pictureId={0} />
       </div>
       <div className='item slide-in-bottom'>
-         <Pictureonhero pictureId={2} />
+         <Pictureonhero pictureId={1} />
       </div> 
          <div className='item slide-in-top_delayed'>
-            <Pictureonhero pictureId={1} />
+            <Pictureonhero pictureId={0} />
          </div>
       <div className='item slide-in-bottom-delayed'>
-         <Pictureonhero pictureId={2} />
+         <Pictureonhero pictureId={1} />
       </div> 
       <div className='item slide-in-top'>
-      <Pictureonhero pictureId={1} />
+      <Pictureonhero pictureId={0} />
       </div>
       <div className='item slide-in-top'>
-         <Pictureonhero pictureId={2} />
+         <Pictureonhero pictureId={1} />
       </div> 
       <div className='item slide-in-bottom'>
-      <Pictureonhero pictureId={1} />
+      <Pictureonhero pictureId={0} />
       </div>
       <div className='item slide-in-top_delayed'>
-         <Pictureonhero pictureId={2} />
+         <Pictureonhero pictureId={1} />
       </div> 
       <div className='item slide-in-bottom-delayed'>
-      <Pictureonhero pictureId={1} />
+      <Pictureonhero pictureId={0} />
       </div>
       <div className='item slide-in-top'>
-         <Pictureonhero pictureId={2} />
+         <Pictureonhero pictureId={1} />
       </div>
       <div className='item slide-in-top'>
-      <Pictureonhero pictureId={1} />
+      <Pictureonhero pictureId={0} />
       </div>
       <div className='item slide-in-bottom'>
-         <Pictureonhero pictureId={2} />
+         <Pictureonhero pictureId={1} />
       </div>
       <div className='item slide-in-top_delayed'>
-      <Pictureonhero pictureId={1} />
+      <Pictureonhero pictureId={0} />
       </div>
       <div className='item slide-in-bottom-delayed'>
-         <Pictureonhero pictureId={2} />
+         <Pictureonhero pictureId={1} />
       </div>
       <div className='item slide-in-top'>
-      <Pictureonhero pictureId={1} />
+      <Pictureonhero pictureId={0} />
       </div>
       </div>
     </div>
