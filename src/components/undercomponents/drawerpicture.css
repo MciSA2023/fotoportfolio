@@ -1,0 +1,13 @@
+.Wrapper-Drawerpicture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.picture_setformat_drawer{
+    aspect-ratio: 1.7/1;
+    width: 100%;
+}
