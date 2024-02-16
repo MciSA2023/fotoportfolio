@@ -10,7 +10,6 @@ function Grid() {
 
    useEffect(() => {
       setTimeout(() => {
-         setShowGrid(false);
          setAnimationComplete(true);
       }, 5500);
       
@@ -19,7 +18,7 @@ function Grid() {
 
    if (animationComplete) {
       return (
-         <Drawer pictureId={0}/>
+         <Drawer/>
       );
    }
 
