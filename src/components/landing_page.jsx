@@ -1,25 +1,15 @@
 import './landing_page.css';
-import getpictures from "../services/getpictures";
-import { useState } from 'react';
+import Carosell from './undercomponents/carosell';
+import slides from './carouselData.json'; // Directly import the array of slides
 
-function Landing_page() { 
-  const pictures = getpictures();
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const handlebuttonclickplus = () => {
-    setCurrentImageIndex((currentImageIndex + 1) % pictures.length);
-  }
-
-  const handlebuttonclickminus = () => {
-    setCurrentImageIndex((currentImageIndex - 1 + pictures.length) % pictures.length);
-  }
-
-  return (
-    <div className='landing_page_main_container'>
-      <div>
-      </div>
-    </div>
-  );
+function Landing_page() {
+    return (
+        <div className='landing_page_main_container'>
+            <div>
+                <Carosell data={slides} /> {/* Pass slides directly */}
+            </div>
+        </div>
+    );
 }
 
 export default Landing_page;
