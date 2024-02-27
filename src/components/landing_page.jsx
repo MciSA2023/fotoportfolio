@@ -1,11 +1,10 @@
-import './drawer.css';
+import './landing_page.css';
 import getpictures from "../services/getpictures";
 import { useState } from 'react';
 
-function Drawer() { 
+function Landing_page() { 
   const pictures = getpictures();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const selectedPicture = pictures[currentImageIndex];
 
   const handlebuttonclickplus = () => {
     setCurrentImageIndex((currentImageIndex + 1) % pictures.length);
@@ -16,15 +15,11 @@ function Drawer() {
   }
 
   return (
-    <div className="drawer_wrapper">
-      <div className='drawer_container'>
-        <div className='button_container'>
-          <button onClick={handlebuttonclickplus}>Nächstes Bild</button>
-        </div>
-        <button onClick={handlebuttonclickminus}>Vorheriges Bild</button>
+    <div className='landing_page_main_container'>
+      <div>
       </div>
-    </div>    
+    </div>
   );
 }
 
-export default Drawer;
+export default Landing_page;

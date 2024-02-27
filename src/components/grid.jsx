@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import './grid.css';
 import Pictureonhero from './undercomponents/pictureonhero';
-import Drawer from './drawer';
+import Landing_page from './landing_page';
 
 
 function Grid() {
@@ -18,7 +18,7 @@ function Grid() {
 
    if (animationComplete) {
       return (
-         <Drawer/>
+         <Landing_page />
       );
    }
 
