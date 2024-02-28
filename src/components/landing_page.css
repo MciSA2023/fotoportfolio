@@ -1,6 +1,45 @@
 .landing_page_main_container{
-  background-color: black;
-  height: 100%;
+  background-color: rgb(16, 15, 15);
   width: 100%;
+  height: 100vh;
+}
+
+.nav_items {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5); /* Adjust the values as needed */
+}
+
+.nav_item{
+  color: rgb(253, 229, 175);
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 3rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.nav_item_small{
+  color: rgb(253, 229, 175);
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+}
+
+.dropdown_menu{
+  background-color: rgb(16, 15, 15);
+  position: absolute;
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 8vh;
+  z-index: 1;
 }
