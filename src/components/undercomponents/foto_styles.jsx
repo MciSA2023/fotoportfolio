@@ -1,7 +1,18 @@
 import React from 'react';
+import './foto_styles.css';
+import pictures from '../../services/getpictures';
+
+// Getting Categories from pictures
+
+const getCategorys = () => {
+    const categories = pictures.map(picture => picture.category);
+    return [...new Set(categories)];
+}
+
 
 const FotoStyles = () => {
-    // Array of categories
+    getCategorys();
+    console.log(getCategorys());
     const categories = ['Nature', 'Travel', 'Food', 'Animals', 'Architecture'];
 
     // Generate a random number of categories

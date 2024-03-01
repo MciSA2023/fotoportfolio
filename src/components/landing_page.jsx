@@ -1,6 +1,7 @@
 import './landing_page.css';
+import FotoStyles from './undercomponents/foto_styles';
 import Carosell from './undercomponents/carosell';
-import slides from './carouselData.json'; // Directly import the array of slides
+import slides from './carouselData.json';
 
 function Landing_page() {
     return (
@@ -22,7 +23,7 @@ function Landing_page() {
             </div>  
         <div className='landing_page_foto_styles'>
             <div>
-
+                <FotoStyles />
             </div>
         </div>
         </div>
