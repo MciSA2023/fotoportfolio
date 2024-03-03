@@ -4,34 +4,45 @@ import pictures from '../../services/getpictures';
 
 // Getting Categories from pictures
 
-const getCategorys = () => {
-    const categories = pictures.map(picture => picture.category);
-    return [...new Set(categories)];
-}
+const categories = pictures.map((picture) => picture.category);
+const uniqueCategories = [...new Set(categories)];
 
+// Function to get one random picture from each category and display every category in a grid-item 
 
-const FotoStyles = () => {
-    getCategorys();
-    console.log(getCategorys());
-    const categories = ['Nature', 'Travel', 'Food', 'Animals', 'Architecture'];
-
-    // Generate a random number of categories
-    const numCategories = Math.floor(Math.random() * categories.length) + 1;
-
-    // Select random categories
-    const selectedCategories = categories.slice(0, numCategories);
-
+function FotoStyles() {
     return (
-        <div>
-            {selectedCategories.map((category, index) => (
-                <div key={index} className="grid-item">
-                    {/* Render grid item for each category */}
-                    <h2>{category}</h2>
-                    {/* Add more content here */}
-                </div>
-            ))}
+        <div className='foto_styles_main_container'>
+            <div className='foto_styles_container'>
+                {uniqueCategories.map((category) => {
+                    const picture = pictures.find((picture) => picture.category === category);
+                    const backgroundImageStyle = {
+                        backgroundImage: `url(${picture.imagePath})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center', 
+                    };
+                    if (picture.format === 'portrait') {
+                        return (
+                            <div key={picture.id} className='foto_styles_grid_item portrait_size' style={backgroundImageStyle}>
+                                <div className='Category_container'>
+                                    <h2 className='category'>{category}</h2>
+                                </div>
+                            </div>
+                        );
+                    }
+                    if (picture.format === 'landscape') {
+                        return (
+                            <div key={picture.id} className='foto_styles_grid_item landscape_size' style={backgroundImageStyle}>
+                                 <div className='Category_container'>
+                                    <h2 className='category'>{category}</h2>
+                                </div>
+                            </div>
+                        );
+                    }
+                    return null;
+                })}
+            </div>
         </div>
     );
-};
+}
 
 export default FotoStyles;

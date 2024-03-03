@@ -1,0 +1,59 @@
+.foto_styles_main_container{
+    background-color: rgb(16, 15, 15);
+    max-width: 100%;
+    height: 100vh;
+}
+
+.foto_styles_container{
+    max-height: 100%;
+    max-width: 100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 400px;
+    gap:0.5rem;
+}
+
+.foto_styles_grid_item{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.foto_styles_grid_item:hover{
+    transform: scale(1.1);
+}
+
+.Category_container{
+    background-color: rgba(16, 15, 15, 0.35);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category{
+    color: rgb(253, 229, 175);
+}
+
+@media screen and (min-width: 600px) {
+    .portrait_size{
+        grid-row: span 2/auto;
+    }
+    
+    .landscape_size{
+        grid-column: span 2/auto;
+    }
+   
+}
+    
+.foto_styles_image{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+

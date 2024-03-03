@@ -5,6 +5,7 @@
 
 .landing_page_navbar{
   max-width: 100%;
+  border-bottom: 1px solid rgb(253, 229, 175);
 }
 
 .landing_page_navbar_links{
@@ -57,4 +58,21 @@
   align-items: center;
   top: 8vh;
   z-index: 1;
+}
+
+.landing_page_überschrift{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-top: 1px solid rgb(253, 229, 175);
+  border-bottom: 1px solid rgb(253, 229, 175);
+}
+
+.überschrift{
+  color: rgb(253, 229, 175);
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
 }

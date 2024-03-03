@@ -20,7 +20,10 @@ function Landing_page() {
             </div>
         </div>
             <Carosell data={slides} />
-            </div>  
+            </div> 
+            <div className='landing_page_überschrift'>
+                <h1 className='überschrift'>Photograpy Categories</h1>
+            </div>
         <div className='landing_page_foto_styles'>
             <div>
                 <FotoStyles />
