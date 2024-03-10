@@ -1,15 +1,17 @@
 [
     {
-        "src": "http://placekitten.com/1920/1080",
-        "alt": "This is the first slide"
+        "src": "0",
+        "alt": "This is the first slide",
+        "caption": "This is the first slide"
+    },
+    {   "src": "3",
+        "alt": "This is the second slide",
+        "caption": "This is the second slide"
     },
     {
-        "src": "http://placekitten.com/500/1080",
-        "alt": "This is the second slide"
-    },
-    {
-        "src": "http://placekitten.com/1920/1080",
-        "alt": "This is the third slide"
+        "src": "0",
+        "alt": "This is the third slide",
+        "caption": "This is the third slide"
     }
 ]
 
