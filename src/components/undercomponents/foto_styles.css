@@ -1,7 +1,7 @@
 .foto_styles_main_container{
     background-color: rgb(16, 15, 15);
     max-width: 100%;
-    height: 100vh;
+    height: 200%;
 }
 
 .foto_styles_container{
@@ -10,7 +10,7 @@
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 300px;
-    gap:0.5rem;
+    gap: 0.5rem;
 }
 
 .foto_styles_grid_item{
@@ -19,10 +19,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
-
-.foto_styles_grid_item:hover{
-    transform: scale(1.1);
 }
 
 .Category_container{
@@ -55,5 +51,22 @@
     object-position: center;
     cursor: pointer;
     transition: transform 0.5s;
+}
+
+.foto_styles_image{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.selected_category_photos{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.selected_category_photo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 

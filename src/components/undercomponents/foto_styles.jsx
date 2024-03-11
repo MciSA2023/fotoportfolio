@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './foto_styles.css';
 import pictures from '../../services/getpictures';
-
-// Getting Categories from pictures
+import foto_gallery from './foto_gallery';
 
 const categories = pictures.map((picture) => picture.category);
 const uniqueCategories = [...new Set(categories)];
 
-// Function to get one random picture from each category and display every category in a grid-item 
-
 function FotoStyles() {
+    const [selectedCategory, setSelectedCategory] = useState(null);
+
+    const handleFotoStyleClick = (category) => {
+        setSelectedCategory(category);
+    };
+
+    
+
     return (
         <div className='foto_styles_main_container'>
             <div className='foto_styles_container'>
@@ -18,11 +23,11 @@ function FotoStyles() {
                     const backgroundImageStyle = {
                         backgroundImage: `url(${picture.imagePath})`,
                         backgroundSize: 'cover',
-                        backgroundPosition: 'center', 
+                        backgroundPosition: 'center',
                     };
                     if (picture.format === 'portrait') {
                         return (
-                            <div key={picture.id} className='foto_styles_grid_item portrait_size' style={backgroundImageStyle}>
+                            <div key={picture.id} className='foto_styles_grid_item portrait_size' style={backgroundImageStyle} onClick={() => handleFotoStyleClick(category)}>
                                 <div className='Category_container'>
                                     <h2 className='category'>{category}</h2>
                                 </div>
@@ -31,8 +36,8 @@ function FotoStyles() {
                     }
                     if (picture.format === 'landscape') {
                         return (
-                            <div key={picture.id} className='foto_styles_grid_item landscape_size' style={backgroundImageStyle}>
-                                 <div className='Category_container'>
+                            <div key={picture.id} className='foto_styles_grid_item landscape_size' style={backgroundImageStyle} onClick={() => handleFotoStyleClick(category)}>
+                                <div className='Category_container'>
                                     <h2 className='category'>{category}</h2>
                                 </div>
                             </div>

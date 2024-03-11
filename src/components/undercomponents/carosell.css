@@ -51,12 +51,12 @@
 
 .indicator{
     background-color: white;
-    height: 10px;
-    width: 10px;
+    height: 1rem;
+    width: 1rem;
     border-radius: 100%;
     border: none;
     outline: none;
-    box-shadow: 0px 0px 5px #555;
+    box-shadow: 0px 0px 3px #555;
     margin: 0 20px;
     cursor: pointer;
 }

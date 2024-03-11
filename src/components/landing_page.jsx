@@ -2,6 +2,7 @@ import './landing_page.css';
 import FotoStyles from './undercomponents/foto_styles';
 import Carosell from './undercomponents/carosell';
 import slides from './carouselData.json';
+import FotoGallery from './undercomponents/foto_gallery';
 
 function Landing_page() {
     return (
@@ -27,6 +28,12 @@ function Landing_page() {
         <div className='landing_page_foto_styles'>
             <div>
                 <FotoStyles />
+            </div>
+            <div className='landing_page_überschrift'>
+                <h1 className='überschrift'>Foto Gallery</h1>
+            </div>
+            <div>
+                <FotoGallery />
             </div>
         </div>
         </div>
