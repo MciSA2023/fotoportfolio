@@ -1,3 +1,4 @@
+import './mainscreen.css';
 import Grid from '../components/grid';
 import Loading from '../components/loading';
 import { useEffect, useState } from 'react';

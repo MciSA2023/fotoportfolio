@@ -45,8 +45,8 @@ const FotoGallery = () => {
                     }
                     return null;
                 })}
-            </div>
-            {loadedImages < 100 && (
+           </div>
+            {loadedImages < 1 && (
                 <div className=''>
                     <button onClick={loadMoreImages}>Load More</button>
                 </div>

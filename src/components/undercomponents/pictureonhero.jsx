@@ -10,7 +10,7 @@ function Pictureonhero({ pictureId }) {
     return <div>No picture found with the provided ID.</div>;
   }
 
-  const imagePath = require(`../../img/DSC${selectedPicture.id}.jpeg`);
+  const imagePath = require(`../../img/DSC${selectedPicture.id}.JPG`);
 
   return (
     <div className='Wrapper-PictureonHero'>

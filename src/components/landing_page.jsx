@@ -6,7 +6,7 @@ import FotoGallery from './undercomponents/foto_gallery';
 
 function Landing_page() {
     return (
-        <div className='landing_page_main_container'>
+        <div className='landing_page_main_container fade-in-bottom'>
             <div>
                 <div className='landing_page_navbar'>
                     <div className='landing_page_navbar_links'>
