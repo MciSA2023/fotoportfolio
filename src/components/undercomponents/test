@@ -1,0 +1,64 @@
+import React, { useState, useEffect } from 'react';
+import pictures from '../../services/getpictures';
+import './foto_gallery.css';
+
+const FotoGallery = () => {
+    const [images, setImages] = useState([]);
+
+    useEffect(() => {
+        // Load images in low resolution when component mounts
+        const loadImages = async () => {
+            const lowResImages = await Promise.all(pictures.map(async (image) => {
+                const lowResImageData = await getLowResImageData(image.imagePath);
+                return {
+                    ...image,
+                    lowResImageData: lowResImageData,
+                };
+            }));
+            setImages(lowResImages);
+        };
+
+        loadImages();
+    }, []);
+
+    // Function to get low resolution image data
+    const getLowResImageData = async (imageUrl) => {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.crossOrigin = "Anonymous";
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = img.width / 4; // Adjust the width as per your requirement
+                canvas.height = img.height / 4; // Adjust the height as per your requirement
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                const lowResImageData = canvas.toDataURL('image/jpeg', 0.5); // Adjust quality as per your requirement
+                resolve(lowResImageData);
+            };
+            img.src = imageUrl;
+        });
+    };
+
+    // Function to open fullscreen modal
+    const openFullscreen = (e, highResPath) => {
+            setModal(true);
+            const imgSrc = highResPath.target.src;
+            modalImgRef.current.src = imgSrc;
+        }
+        console.log(highResPath);
+    };
+
+    return (
+        <div className="foto-gallery">
+            <div className="grid-container">
+                {images.map((image, index) => (
+                    <div className={`grid-item ${image.format}-size`} key={index} onClick={(e) => openFullscreen(e, image.highResPath)}>
+                        <img src={image.lowResImageData} alt={image.category} className='shown_pic' />
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default FotoGallery;
