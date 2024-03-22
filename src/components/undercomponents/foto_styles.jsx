@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
 import './foto_styles.css';
 import pictures from '../../services/getpictures';
-import foto_gallery from './foto_gallery';
+import FotoGallery from './foto_gallery';
 
 const categories = pictures.map((picture) => picture.category);
 const uniqueCategories = [...new Set(categories)];
 
 function FotoStyles() {
-    const [selectedCategory, setSelectedCategory] = useState(null);
+    const [selectedCategory, setSelectedCategory] = useState('');
 
     const handleFotoStyleClick = (category) => {
         setSelectedCategory(category);
     };
-
-    
 
     return (
         <div className='foto_styles_main_container'>
@@ -25,27 +23,23 @@ function FotoStyles() {
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                     };
-                    if (picture.format === 'portrait') {
-                        return (
-                            <div key={picture.id} className='foto_styles_grid_item portrait_size' style={backgroundImageStyle} onClick={() => handleFotoStyleClick(category)}>
-                                <div className='Category_container'>
-                                    <h2 className='category'>{category}</h2>
-                                </div>
+                    return (
+                        <div key={picture.id} className={`foto_styles_grid_item ${picture.format}-size`} style={backgroundImageStyle} onClick={() => handleFotoStyleClick(category)}>
+                            <div className='Category_container'>
+                                <h2 className='category'>{category}</h2>
                             </div>
-                        );
-                    }
-                    if (picture.format === 'landscape') {
-                        return (
-                            <div key={picture.id} className='foto_styles_grid_item landscape_size' style={backgroundImageStyle} onClick={() => handleFotoStyleClick(category)}>
-                                <div className='Category_container'>
-                                    <h2 className='category'>{category}</h2>
-                                </div>
-                            </div>
-                        );
-                    }
-                    return null;
+                        </div>
+                    );
                 })}
             </div>
+            {selectedCategory && (
+                <div className='landing_page_überschrift'>
+                    <h1 className='überschrift'>{selectedCategory} Foto Gallery</h1>
+                </div>
+            )}
+            {selectedCategory && (
+                <FotoGallery category={selectedCategory} />
+            )}
         </div>
     );
 }

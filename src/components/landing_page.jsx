@@ -30,7 +30,7 @@ function Landing_page() {
                 <FotoStyles />
             </div>
             <div className='landing_page_überschrift'>
-                <h1 className='überschrift'>Foto Gallery</h1>
+                <h1 className='überschrift'>Full Foto Gallery</h1>
             </div>
             <div>
                 <FotoGallery />

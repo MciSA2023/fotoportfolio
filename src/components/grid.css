@@ -84,7 +84,7 @@
 
 .slide-in-top {
   opacity: 0;
-  animation: slide-in-top 2.5s 0.5s forwards;
+  animation: slide-in-top 2.5s 0.7s forwards;
 }
 
 @keyframes slide-in-top {
@@ -100,7 +100,7 @@
 
 .slide-in-top_delayed {
   opacity: 0;
-  animation: slide-in-top 2.5s 1s forwards;
+  animation: slide-in-top 2.5s 1.2s forwards;
 }
 
 @keyframes slide-in-top {

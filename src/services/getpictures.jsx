@@ -5,7 +5,7 @@ const pictures = [
   new Picture(1,require(`../img/DSC1.JPG`), 'Street', 'germany', 'portrait'),
   new Picture(2,require(`../img/DSC2.JPG`), 'Night-Street', 'New York', 'portrait'),
   new Picture(3,require(`../img/DSC3.JPG`), 'Street', 'Washington', 'landscape'),
-  new Picture(4,require(`../img/DSC4.JPG`), 'Nature', 'Zurich', 'landscape'),
+  new Picture(4,require(`../img/DSC4.JPG`), 'Landscape', 'Zurich', 'landscape'),
   new Picture(5,require(`../img/DSC5.JPG`), 'Nature', 'Zurich', 'landscape'),
   new Picture(6,require(`../img/DSC6.JPG`), 'Nature', 'Zurich', 'landscape'),
   new Picture(7,require(`../img/DSC7.JPG`), 'Nature', 'Zurich', 'portrait'),
