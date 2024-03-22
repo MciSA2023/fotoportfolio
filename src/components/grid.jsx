@@ -9,12 +9,11 @@ function Grid() {
   const [animationComplete, setAnimationComplete] = useState(false);
 
   useEffect(() => {
-    // Vorladen der Bilder im Hintergrund
     preloadImages();
     
     setTimeout(() => {
       setAnimationComplete(true);
-    }, 5500);
+    }, 6500);
   }, []);
 
   
@@ -67,10 +66,10 @@ function Grid() {
      <Pictureonhero pictureId={11} />
      </div>
      <div className='item slide-in-bottom'>
-        <Pictureonhero pictureId={0} />
+        <Pictureonhero pictureId={4} />
      </div> 
         <div className='item slide-in-top_delayed'>
-           <Pictureonhero pictureId={1} />
+           <Pictureonhero pictureId={0} />
         </div>
      <div className='item slide-in-bottom-delayed'>
         <Pictureonhero pictureId={3} />
