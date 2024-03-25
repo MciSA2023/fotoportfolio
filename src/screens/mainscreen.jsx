@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 function Mainscreen() {
   const [loading, setLoading] = useState(true);
     useEffect(() => {
-      setTimeout(() => {setLoading(false);}, 5000);
+      setTimeout(() => {setLoading(false);}, 500);
     }, []);
   if (loading) {
     return (

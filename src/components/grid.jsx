@@ -13,7 +13,7 @@ function Grid() {
     
     setTimeout(() => {
       setAnimationComplete(true);
-    }, 6500);
+    }, 5500);
   }, []);
 
   
