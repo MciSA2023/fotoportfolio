@@ -24,7 +24,7 @@ const FotoGallery = ({ category }) => {
             <div className="grid-container">
                 {filteredPictures.map((image, index) => (
                     <div className={`grid-item ${image.format}-size`} key={index} onClick={() => openFullscreen(image.imagePath)}>
-                        <img src={image.imagePath} alt={image.category} className='shown_pic' />
+                        <img src={image.imagePath} alt={image.category} className='shown_pic' loading='lazy' />
                     </div>
                 ))}
             </div>
@@ -38,7 +38,7 @@ const FotoGallery = ({ category }) => {
 const ModalOverlay = ({ modal, modalImgSrc, closeModal }) => (
     <div className={modal ? "modal" : "modal-hidden"} onClick={closeModal}>
         <span className="close" onClick={closeModal}>&times;</span>
-        <img className="modal-content" src={modalImgSrc} alt="modal" />
+        <img className="modal-content" src={modalImgSrc} alt="modal" loading='lazy' />
     </div>
 );
 

@@ -14,7 +14,7 @@ function Pictureonhero({ pictureId }) {
 
   return (
     <div className='Wrapper-PictureonHero'>
-      <img src={imagePath} alt={selectedPicture.category} className='picture_setformat'/>
+      <img src={imagePath} alt={selectedPicture.category} className='picture_setformat' loading='lazy'/>
     </div>
   );
 }

@@ -9,8 +9,17 @@ const uniqueCategories = [...new Set(categories)];
 function FotoStyles() {
     const [selectedCategory, setSelectedCategory] = useState('');
 
+    const scrollToCategory = () => {
+        const categoryElement = document.querySelector('.foto-gallery');
+        if (categoryElement) {
+            categoryElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+    
+
     const handleFotoStyleClick = (category) => {
         setSelectedCategory(category);
+        scrollToCategory();
     };
 
     return (

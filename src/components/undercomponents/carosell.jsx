@@ -27,7 +27,7 @@ const Carosell = ({ data }) => {
             <BsArrowLeftCircleFill className='arrow arrow_left' onClick={prevSlide} />
             {data.map((item, index) => {
                 return (
-                    <img src={imgPath(item.src)} alt={item.alt} key={index} className={slide === index ? "slide" : "slide slide-hidden"} />
+                    <img src={imgPath(item.src)} alt={item.alt} key={index} className={slide === index ? "slide" : "slide slide-hidden"} loading='lazy'/>
                 );
             })}
             <BsArrowRightCircleFill className='arrow arrow_right' onClick={nextSlide} />
