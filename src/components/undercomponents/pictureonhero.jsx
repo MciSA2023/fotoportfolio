@@ -1,16 +1,17 @@
 // Pictureonhero.js
 import React from 'react';
-import pictures from "../../services/getpictures";
+import lowpictures from '../../services/getpictures';
 import './pictureonhero.css';
 
+
 function Pictureonhero({ pictureId }) {
-  const selectedPicture = pictures.find(picture => picture.id === pictureId);
+  const selectedPicture = lowpictures.find(picture => picture.id === pictureId);
 
   if (!selectedPicture) {
     return <div>No picture found with the provided ID.</div>;
   }
 
-  const imagePath = require(`../../img/DSC${selectedPicture.id}.JPG`);
+  const imagePath = require(`../../img/LowRes/DSC${selectedPicture.id}.JPG`);
 
   return (
     <div className='Wrapper-PictureonHero'>

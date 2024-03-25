@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import pictures from '../../services/getpictures';
+import lowpictures from '../../services/getpictures';
 import './foto_gallery.css';
 
 const FotoGallery = ({ category }) => {
@@ -16,8 +16,7 @@ const FotoGallery = ({ category }) => {
         setModal(false);
     };
 
-    // Anpassung der Filterlogik
-    const filteredPictures = pictures.filter(image => category === null || category === undefined || image.category === category);
+    const filteredPictures = lowpictures.filter(image => category === null || category === undefined || image.category === category);
 
     return (
         <div className="foto-gallery">

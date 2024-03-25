@@ -20,7 +20,7 @@ const Carosell = ({ data }) => {
         return null; // Or return a message or UI indicating the error
     }
 
-    const imgPath = (index) => require(`../../img/DSC${index}.JPG`);
+    const imgPath = (index) => require(`../../img/LowRes/DSC${index}.JPG`);
 
     return (
         <div className='carosell_main'>

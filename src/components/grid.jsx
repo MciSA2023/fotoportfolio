@@ -63,7 +63,7 @@ function Grid() {
         <Pictureonhero pictureId={10} />
      </div> 
      <div className='item slide-in-top'>
-     <Pictureonhero pictureId={11} />
+     <Pictureonhero pictureId={1} />
      </div>
      <div className='item slide-in-bottom'>
         <Pictureonhero pictureId={4} />
@@ -96,7 +96,7 @@ function Grid() {
      <Pictureonhero pictureId={10} />
      </div>
      <div className='item slide-in-bottom'>
-        <Pictureonhero pictureId={11} />
+        <Pictureonhero pictureId={1} />
      </div>
      <div className='item slide-in-top_delayed'>
      <Pictureonhero pictureId={0} />
