@@ -4,6 +4,14 @@ import Carosell from './undercomponents/carosell';
 import slides from './carouselData.json';
 import FotoGallery from './undercomponents/foto_gallery';
 
+function handlePhotoclick() {
+    document.querySelector('.foto-gallery').scrollIntoView({ behavior: 'smooth' });
+}
+
+function handleGearclick() {
+    
+}
+
 function Landing_page() {
     return (
         <div className='landing_page_main_container fade-in-bottom'>
@@ -12,8 +20,8 @@ function Landing_page() {
                     <div className='landing_page_navbar_links'>
                         <ul className='nav_items'>
                             <li className='nav_item_container' ><a href='#' className='nav_item'>Home</a></li>
-                            <li className='nav_item_container'><a href='#' className='nav_item'>Photos</a></li>
-                            <li className='nav_item_container'><a href='#' className='nav_item'>Gear</a></li>
+                            <li className='nav_item_container'><a href='#' className='nav_item' onClick={handlePhotoclick}>Photos</a></li>
+                            <li className='nav_item_container'><a href='#' className='nav_item' onClick={handleGearclick}>Gear</a></li>
                             <li className='nav_item_container'><a href='#' className='nav_item'>Contact</a></li>
                         </ul>
                     </div>
